@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <title>Station</title>
+</head>
+
+<body>
+    <!--aqui empieza el navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid navbarbg">
+            <img src="src/logo.png" alt="" width="35" height="50" class="paddlogo d-inline-block align-text-top me-2">
+            <h5 class="colorletra">Station</h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  colorletra ms-4" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorletra" href="html/consolas.html">Consolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorletra" href="#eventos">Eventos</a>
+                    </li>
+                </ul>
+                <a class="nav-link colorletra" href="#"><img src="src/logousuario.png" alt="" width="35" height="29"
+                        class="d-inline-block align-text-top me-2">
+                    Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+    <!--aqui termina el navbar-->
+
+    <!--aqui empieza el carousel-->
+    <br>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="container center">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="/src/xbox1.png" class="w-100 imgmax" align="center" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/src/switch.png" class="w-100 imgmax" align="center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/src/ps5.png" class="w-100 imgmax" align="center" alt="...">
+                </div>
+            </div>
+            <div class="overlay">
+                <!-- Pt = Pading Top-->
+                <div class="">
+                    <!-- Alineamos los items al centro-->
+                    <div class="row aling-items-center">
+                        <div class="text-center">
+                            <h3 class="colorletra">Station</h3>
+                            <a href="/html/consolas.html" id="boton-alterno" class="btn botonc colorletra">Ver Consolas</a>
+                            <button type="button" class="btn botonc colorletra" href="/html/eventos.html">Eventos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--aqui termina el carousel-->
+
+    <!-- Aqui empiezan las tarjetas-->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card1">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Play Station 5</h5>
+                            <p class="card-text">-Consola Play Station 5 <br>
+                                -Mando color blanco <br>
+                                -Juegos incluidos: Call of Duty Vanguard</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/ps5.png" width="300px" height=300px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/ps5.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card2">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Nintendo Switch</h5>
+                            <p class="card-text">-Consola Nintendo Switch <br>
+                                -Mandos laterales color azul y rojo <br>
+                                -Juegos incluidos: Mario Kart, Cuphead</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/switch.png" width="300px" height=300px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/switch.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card3">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Xbox series X</h5>
+                            <p class="card-text">-Consola Xbox series X <br>
+                                -Mando con skin personalizada de Halo <br>
+                                -Juegos incluidos: Halo infinitive, Minecraft</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/xbox1.png" width="300px" height=300px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/xbox.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card4">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Nintendo Wii U</h5>
+                            <p class="card-text">-Consola portatil nintendo Wii U <br>
+                                -Color Azul o blanco <br>
+                                -Juegos incluidos: New Super Mario Bross U</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/wiiu.png" width="300px" height=300px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/ps5.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card5">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Play Station 4</h5>
+                            <p class="card-text">-Consola Play Station 4 <br>
+                                -2 mandos color negro incluidos<br>
+                                -Juegos incluidos: Call of Duty Cold War, Fall guys</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/ps4.png" width="275px" height=275px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/switch.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card6">
+                    <div class="card cardbg">
+                        <div class="card-body">
+                            <h5 class="card-title">Nintendo 3DS</h5>
+                            <p class="card-text">-Consola Portatil nintendo 3DS <br>
+                                -Color blanco o azul con gris<br>
+                                -Juegos incluidos: GTA San Andreas</p>
+                        </div>
+                        <div class="padd">
+                            <img src="/src/n3ds.png" width="300px" height=300px alt="">
+                        </div>
+                        <div>
+                            <a href="/html/xbox.html" class="btn btn-danger btnmargin"> Mas Informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Aqui terminan las tarjetas-->
+    <!--Eventos-->
+    <div class="container-fluid eventos" id="eventos">
+        <div class="row">
+            <div class="col-6">
+                <img src="/src/venta.png" class="imgmargin" alt="" width="400px" height="400px">
+            </div>
+            <div class="col-lg-6 col-ms-6">
+                <div class="card cardpos">
+                    <div class="card-body">
+                        <h5 class="card-title colorletra">Compra tus Consolas Favoritas a un gran precio</h5>
+                        <p class="card-text colorletra">Desde consolas antiguas hasta las de ultima generacion! <br>
+                            Llevate un descuento adicional en tu primera compra, <br>
+                            no te lo puedes perder!</p>
+                    </div>
+                    <div>
+                        <a href="/html/eventos.html" class="btn btn-danger botonpos">Me interesa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!--Eventos fin-->
+    <!-- Footer-->
+    <div class="container-fluid footer">
+        <h6 align="center" class="colorletra">Síguenos en nuestras redes sociales <br>
+            <a href="https://twitter.com/" class="colorletra">@station16</a> |<a href="https://www.facebook.com/"
+                class="colorletra"> station_16</a>
+        </h6>
+    </div>
+    <!--Footer fin-->
+</body>
+
+</html>

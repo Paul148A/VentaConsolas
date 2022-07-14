@@ -1,0 +1,196 @@
+.carouselimg{
+    width: 500px;
+    margin-left: 400px;
+}
+
+.imgmax{
+    max-width: 400px;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 40px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+}
+
+.center{
+    padding-right: 150px;
+}
+
+.carousel{
+    background-color: #780000;
+    height: 480px;
+    z-index: 0;
+}
+@media(min-width:100px) and (max-width:826px){
+    .card1{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        align-items: center;
+        right: 180px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .card2{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        top: 1200px;
+        right: 200px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .card3{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        top: 1800px;
+        right: 200px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .card4{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        top: 2400px;
+        right: 200px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .card5{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        top: 3000px;
+        right: 200px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .card6{
+        background-color: #669bbc;
+        position: absolute;
+        width: 350px;
+        height: 250px;
+        top: 3600px;
+        right: 200px;
+    }
+}
+
+@media(min-width:100px) and (max-width:826px){
+    .footer{
+        background-color: #780000;
+        position: absolute;
+        padding: 35px;
+        top: 5000px;
+    }
+}
+@media(min-width:100px) and (max-width:826px){
+    .footer1{
+        background-color: #780000;
+        position: absolute;
+        padding: 35px;
+        top: 3200px;
+    }
+}
+
+
+.navbarbg{
+    background-color: #003049;
+}
+
+.paddlogo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.colorletra{
+    color: rgb(255, 255, 255);
+}
+
+.padd{
+    padding: 20px;
+}
+
+.cardbg{
+    background-color: #669bbc;
+}
+
+.btnmargin{
+    margin-left: 105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: #780000;
+    padding: 35px;
+}
+
+
+
+.imgmargin{
+    margin-left: 100px;
+    border-radius: 10%;
+}
+.cardpos{
+    max-width: 500px;
+    margin-top: 110px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    background-color: #780000;
+}
+
+.botonpos{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.eventos{
+    background-color: #003049;
+}
+
+@media(min-width:100px) and (max-width:826px){
+    .eventos{
+        position: absolute;
+        background-color: #003049;
+        top: 4200px;
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 310px;
+    left: 550px;
+}
+
+.botonc{
+    background-color: #003049;  
+}
+
+.botonc:hover{
+    border-color: #ffffff; 
+    color: #ffffff;
+}
+.botonposev{
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+}
+
+
+
+
