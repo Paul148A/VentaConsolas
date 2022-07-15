@@ -191,6 +191,15 @@
     margin-bottom: 20px;
 }
 
+.formulario{
+    margin-left: 400px;
+    margin-right: 100px;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
 
 
 

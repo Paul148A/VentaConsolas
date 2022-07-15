@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
-    <title>Consolas</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+            <script>
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
+            <script>
+                $(function() {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
+            <link href="/bootstrap.js">
+        <title>Station</title>
+    </head>
 
 <body>
     <!--aqui empieza el navbar-->
@@ -49,15 +59,15 @@
     <div class="container-fluid eventos" id="eventos">
         <div class="row">
             <div class="col-6">
-                <img src="/src/venta.png" class="imgmargin" alt="" width="400px" height="400px">
+                <img src="/src/wiiu.png" class="imgmargin" alt="" width="400px" height="400px">
             </div>
             <div class="col-lg-6 col-ms-6">
                 <div class="card cardpos">
                     <div class="card-body">
-                        <h5 class="card-title colorletra">Compra tus Consolas Favoritas a un gran precio</h5>
-                        <p class="card-text colorletra">Desde consolas antiguas hasta las de ultima generacion! <br>
-                            Llevate un descuento adicional en tu primera compra, <br>
-                            no te lo puedes perder!</p>
+                        <h5 class="card-title colorletra">Sorteo de Verano</h5>
+                        <p class="card-text colorletra">Participa por una Nintendo Wii U! <br>
+                            Unicamente debes comprar un producto en nuestra tienda mas cercana, <br>
+                            Y ya estaras participando en el sorteo!</p>
                     </div>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger botonposev" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -96,10 +106,10 @@
             <div class="col-lg-6 col-ms-6">
                 <div class="card cardpos">
                     <div class="card-body">
-                        <h5 class="card-title colorletra">Compra tus Consolas Favoritas a un gran precio</h5>
-                        <p class="card-text colorletra">Desde consolas antiguas hasta las de ultima generacion! <br>
-                            Llevate un descuento adicional en tu primera compra, <br>
-                            no te lo puedes perder!</p>
+                        <h5 class="card-title colorletra">Descuentos especiales los fines de semana</h5>
+                        <p class="card-text colorletra">Acercate a nuestras tiendas cada fin de semana! <br>
+                            Podras obtener un descuento en hasta 30% en cualquier compra! <br>
+                            </p>
                     </div>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger botonposev" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -130,7 +140,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <img src="/src/venta.png" class="imgmargin" alt="" width="400px" height="400px">
+                <img src="/src/switch.png" class="imgmargin" alt="" width="400px" height="400px">
             </div>
         </div>
     </div>
@@ -139,15 +149,15 @@
     <div class="container-fluid eventos" id="eventos">
         <div class="row">
             <div class="col-6">
-                <img src="/src/venta.png" class="imgmargin" alt="" width="400px" height="400px">
+                <img src="/src/ps4.png" class="imgmargin" alt="" width="400px" height="400px">
             </div>
             <div class="col-lg-6 col-ms-6">
                 <div class="card cardpos">
                     <div class="card-body">
-                        <h5 class="card-title colorletra">Compra tus Consolas Favoritas a un gran precio</h5>
-                        <p class="card-text colorletra">Desde consolas antiguas hasta las de ultima generacion! <br>
-                            Llevate un descuento adicional en tu primera compra, <br>
-                            no te lo puedes perder!</p>
+                        <h5 class="card-title colorletra">Torneo especial</h5>
+                        <p class="card-text colorletra">Participa para ganar premios de hasta 400 dolares! <br>
+                            Deberas registrarte en una de nuestras tiendas mas <br>
+                            cercanas para participar</p>
                     </div>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-danger botonposev" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -186,8 +196,8 @@
     <!-- Footer-->
     <div class="container-fluid footer">
         <h6 align="center" class="colorletra">Síguenos en nuestras redes sociales <br>
-            <a href="https://twitter.com/" class="colorletra">@station16</a> |<a href="https://www.facebook.com/"
-                class="colorletra"> station_16</a>
+            <a href="https://twitter.com/" class="colorletra"  data-bs-toggle="tooltip" title="Siguenos!">@station16</a> |<a href="https://www.facebook.com/"
+                class="colorletra"  data-bs-toggle="tooltip" title="Siguenos!"> station_16</a>
         </h6>
     </div>
     <!--Footer fin-->

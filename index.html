@@ -14,6 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous"></script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+        <script>
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        <script src="/bootstrap.js"></script>
     <title>Station</title>
 </head>
 
@@ -37,7 +47,10 @@
                         <a class="nav-link colorletra" href="html/consolas.html">Consolas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link colorletra" href="#eventos">Eventos</a>
+                        <a class="nav-link colorletra" href="#eventos">Eventos y Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorletra" href="#formulario">Quiero ser colaborador</a>
                     </li>
                 </ul>
                 <a class="nav-link colorletra" href="#"><img src="src/logousuario.png" alt="" width="35" height="29"
@@ -59,6 +72,9 @@
                 <div class="carousel-item" data-bs-interval="3000">
                     <img src="/src/switch.png" class="w-100 imgmax" align="center" alt="...">
                 </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/src/n3ds.png" class="w-100 imgmax" align="center" alt="...">
+                </div>
                 <div class="carousel-item">
                     <img src="/src/ps5.png" class="w-100 imgmax" align="center" alt="...">
                 </div>
@@ -70,8 +86,9 @@
                     <div class="row aling-items-center">
                         <div class="text-center">
                             <h3 class="colorletra">Station</h3>
-                            <a href="/html/consolas.html" id="boton-alterno" class="btn botonc colorletra">Ver Consolas</a>
-                            <button type="button" class="btn botonc colorletra" href="/html/eventos.html">Eventos</button>
+                            <a href="/html/consolas.html" id="boton-alterno" class="btn botonc colorletra">Ver
+                                Consolas</a>
+                                <a href="/html/eventos.html" id="boton-alterno" class="btn botonc colorletra">Eventos</a>
                         </div>
                     </div>
                 </div>
@@ -243,13 +260,64 @@
     <br>
     <br>
     <br>
+    <!--Formulario-->
+    <form class="container-ms formulario" id="formulario">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="" placeholder="Ingrese su nombre">
+                    <div id="" class="form-text">No se mostraran los datos enviados a nadie mas</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su correo electronico">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese una contraseña">
+                </div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-toggle="modal" title="Únete a nuestro equipo!" data-bs-target="#exampleModal">
+                    Quiero ser colaborador
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ahora usted esta postulando para ser miembro de Station</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                               Por favor revisar su correo electronico con frecuencia
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-dismiss="modal">Aceptar</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+
+
+    <!--Fin formulario-->
 
     <!--Eventos fin-->
     <!-- Footer-->
     <div class="container-fluid footer">
         <h6 align="center" class="colorletra">Síguenos en nuestras redes sociales <br>
-            <a href="https://twitter.com/" class="colorletra">@station16</a> |<a href="https://www.facebook.com/"
-                class="colorletra"> station_16</a>
+            <a href="https://twitter.com/" class="colorletra" data-bs-toggle="tooltip" title="Siguenos!">@station16 </a> |<a href="https://www.facebook.com/"
+                class="colorletra" data-bs-toggle="tooltip" title="Siguenos!"> station_16</a>
         </h6>
     </div>
     <!--Footer fin-->

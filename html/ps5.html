@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+            <script>
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
+            <script>
+                $(function() {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
+            <link href="/bootstrap.js">
+        <title>Station</title>
+    </head>
 <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid navbarbg">
-            <img src="src/logo.png" alt="" width="35" height="50" class="paddlogo d-inline-block align-text-top me-2">
+            <img src="/src/logo.png" alt="" width="35" height="50" class="paddlogo d-inline-block align-text-top me-2">
             <h5 class="colorletra">Station</h5>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,17 +39,58 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link  colorletra ms-4" href="#">Inicio</a>
+                        <a class="nav-link  colorletra ms-4" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link colorletra" href="#">Consolas</a>
+                        <a class="nav-link colorletra" href="/html/consolas.html">Consolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorletra" href="/html/eventos.html">Eventos</a>
                     </li>
                 </ul>
-                <a class="nav-link colorletra" href="#"><img src="src/logousuario.png" alt="" width="35" height="29"
+                <a class="nav-link colorletra" href="#"><img src="/src/logousuario.png" alt="" width="35" height="29"
                         class="d-inline-block align-text-top me-2">
                     Cerrar sesión</a>
             </div>
         </div>
     </nav>
+    <!--navbar fin-->
+    <!--informacion-->
+    <br>
+    <br>
+
+    <div class="container-fluid eventos" id="eventos">
+        <div class="row">
+            <div class="col-6">
+                <img src="/src/ps5.png" class="imgmargin" alt="" width="400px" height="400px">
+            </div>
+            <div class="col-lg-6 col-ms-6">
+                <div class="card cardpos">
+                    <div class="card-body">
+                        <h5 class="card-title colorletra">¿Que incluye?</h5>
+                        <p class="card-text colorletra">-Consola de Play Station 5 <br>
+                                                        -1 Mando color blanco o negro incluido <br>
+                                                        -1 juego "Call of Duty Vanguard" <br>
+                                                        -1 Cargador de mando</p>
+                    </div>
+                    <div>
+                        <a href="/html/eventos.html" class="btn btn-danger botonpos">Lo Quiero</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--informacion fin-->
+    <!-- Footer-->
+    <div class="container-fluid footer">
+        <h6 align="center" class="colorletra">Síguenos en nuestras redes sociales <br>
+            <a href="https://twitter.com/" class="colorletra Muted" data-bs-toggle="tooltip" title="Default tooltip">@station16</a> |<a href="https://www.facebook.com/"
+                class="colorletra"> station_16</a>
+        </h6>
+    </div>
+    <!--Footer fin-->
 </body>
 </html>
